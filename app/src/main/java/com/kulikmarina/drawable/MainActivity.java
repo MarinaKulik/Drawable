@@ -3,11 +3,14 @@ package com.kulikmarina.drawable;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
-//update
-    AnimationDrawable wifi;
+
+    AnimationDrawable wf;
+    View mView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
 
         ImageView imageView = findViewById(R.id.image);
         imageView.setBackgroundResource(R.drawable.animation);
-
-        wifi = (AnimationDrawable) imageView.getBackground();
+//her
+        wf = (AnimationDrawable) imageView.getBackground();
 
     }
 
@@ -25,6 +28,6 @@ public class MainActivity extends AppCompatActivity {
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
 
-        wifi.start();
+        wf.start();
     }
 }
