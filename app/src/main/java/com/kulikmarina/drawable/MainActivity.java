@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         ImageView imageView = findViewById(R.id.image);
         imageView.setBackgroundResource(R.drawable.animation);
-
+//her
         wf = (AnimationDrawable) imageView.getBackground();
 
     }
