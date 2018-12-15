@@ -8,6 +8,7 @@ import android.widget.ImageView;
 public class MainActivity extends AppCompatActivity {
 //update
     AnimationDrawable wifi;
+    //hey
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
