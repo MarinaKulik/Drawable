@@ -6,9 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
-//update
-    AnimationDrawable wifi;
-    //hey
+
+    AnimationDrawable wf;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,8 +17,8 @@ public class MainActivity extends AppCompatActivity {
 
         ImageView imageView = findViewById(R.id.image);
         imageView.setBackgroundResource(R.drawable.animation);
-//ho
-        wifi = (AnimationDrawable) imageView.getBackground();
+
+        wf = (AnimationDrawable) imageView.getBackground();
 
     }
 
@@ -26,6 +26,6 @@ public class MainActivity extends AppCompatActivity {
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
 
-        wifi.start();
+        wf.start();
     }
 }
